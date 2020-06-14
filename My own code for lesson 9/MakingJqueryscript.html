@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>Gottem</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<style> 			
+		body {
+				margin: 1%!important;
+			}
+		</style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$('#BestButton').click(function(){
+					$('#BestButton').hasClass('where')
+						$("[name='aliens']").fadeIn(7000, function(){
+							$('#BestButton').hide();
+						});
+						
+				});
+				$('#SecondButton').attr("visible");
+				$('#BestButton').mouseover(function(){
+					$(this).html("Hehe you smell");	
+				});
+				$("#BestButton").mouseout(function(){
+					$(this).html("Ask away!");
+				});
+				var options = {};
+				$("#SecondButton").click(function(){
+					 $("#ScrubsSliding").toggle( "slide", options, 2000 );
+					 $("#KidSlidingLeft").hide();
+				});
+			});
+
+		</script>
+		<div> 
+			<p class="BoringText">What does Hazey sometimes feel like at work?</p>					
+			<img style="display:none" src="ancient-aliens-meme-02.jpg" name="aliens">
+			<div> <button type="button" id="BestButton" class="btn btn-primary">Ask away!</button> </div>
+			<button type="button" id="SecondButton" class="btn btn-primary">Make an appearance!</button>
+			<div> <img style="display:none" src="ScrubsSliding.jpg" id="ScrubsSliding"> </div>
+			
+	</body>
+</html>
